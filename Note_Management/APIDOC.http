@@ -77,8 +77,8 @@ POST  http://127.0.0.1:8000/api/jwt_login/
 Content-Type: application/json
 
 {
-    "username":"Ardra",
-    "password":"ardra@123"
+    "username":"Zaya",
+    "password":"zaya@123"
 }
 
 ###
@@ -87,7 +87,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MTYyODM4LCJpYXQiOjE3OTUxNjI1MzgsImp0aSI6IjJkYTNkZTM3YzY2NDQyZGZiNDUzOTE0MTYzOGNmOTkzIiwidXNlcl9pZCI6IjUifQ.mwAHjLqYdk6Z3hD5x0PF-u6Loj1nsj0kE4dDnefMq_Q
 
 {
-    "refresh" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc5NTI0ODkzOCwiaWF0IjoxNzk1MTYyNTM4LCJqdGkiOiI5YzNmYjA1MzhmNTI0MTM3ODE3ZTJmZmU4ZGIzY2QxNSIsInVzZXJfaWQiOiI1In0.QH4oJX7SpmKoM8W3dcBleYX8vxtuQQoaC3SXEcWcR0Q"
+    "refresh" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc5NTI1MTk3MSwiaWF0IjoxNzk1MTY1NTcxLCJqdGkiOiI3M2JmMmY5MjE4M2U0ODc2OTI1ZTUwMjNkYzMyM2MzYiIsInVzZXJfaWQiOiI1In0.4uicEPrkBy0uxPa1VcIrr-wc5EfZllvj73isnd8EikU"
 }
 
 
@@ -141,3 +141,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 DELETE http://127.0.0.1:8000/api/tasks/3/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MTY0NDQ5LCJpYXQiOjE3OTUxNjQxNDksImp0aSI6ImU2YzlhMGIyMzBkOTQwN2VhNzY3MjJmMmM5YTBmZmRhIiwidXNlcl9pZCI6IjUifQ.I8RWQuYmxbldF6CdQlIS50sbeGmOEqucUGfxlRZMq8M
 
+
+###
+POST http://127.0.0.1:8000/api/jwt_logout/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MTY2OTg5LCJpYXQiOjE3OTUxNjY2ODksImp0aSI6IjNjOWVhNjlkZjIwZTRkNTVhODAyMjczYTZiZGQwMWU0IiwidXNlcl9pZCI6IjEifQ.JiFKnHQr3op85ap-zsmPMJanoGln3pNxvmioZER5QCI
+
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc5NTI1MzA4OSwiaWF0IjoxNzk1MTY2Njg5LCJqdGkiOiI4OTUwYmMyZTBiYTk0NTI1OWU0YzMxMmEwMmNhYzA5ZiIsInVzZXJfaWQiOiIxIn0.yb56ao5t9CW_Zd_IgARLzVUQ0bBtZq1pm4iB0QTIhTs"
+}
